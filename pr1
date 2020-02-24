@@ -1,0 +1,14 @@
+read n
+i=1
+empid=100
+while [$i -le $n]
+do
+echo "enter name"
+read name
+echo "Basic"
+read basic
+((empid++))
+((i++))
+echo "$empid|$name|$basic">>emp.txt
+done
+
